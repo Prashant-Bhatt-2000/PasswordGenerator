@@ -15,12 +15,14 @@ while True:
             random_char = random.choice(characters)
             password += random_char
         
-    # print(password)
+
     list_pass = list(password)
     random.shuffle(list_pass)
     password_generated = ''.join(list_pass)
 
-    with open('created_password.txt', 'w') as create: 
+    filename = input("Enter the file name you wnat to save : ")
+
+    with open(filename, 'w') as create: 
         password = 'your generated password : '
         create.write(password)
         create.write(password_generated)
