@@ -20,7 +20,7 @@ while True:
     random.shuffle(list_pass)
     password_generated = ''.join(list_pass)
 
-    filename = input("Enter the file name you wnat to save : ")
+    filename = input("Enter the file name you want to save : ")
 
     with open(filename, 'w') as create: 
         password = 'your generated password : '
